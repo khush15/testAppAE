@@ -1,0 +1,6 @@
+<div [ngSwitch]="type">
+  <ion-card class="ripple"  *ngSwitchCase="1"><ion-card-content><img [src]="image" alt="image"></ion-card-content></ion-card>
+
+  <ion-card class="ripple" *ngSwitchCase="2"><ion-card-content class="parent"><ng-content class="outer"></ng-content></ion-card-content></ion-card>
+
+</div>

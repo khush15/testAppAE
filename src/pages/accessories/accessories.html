@@ -1,0 +1,44 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <ion-list>
+    <ion-row>
+      <ion-col>
+        <h4 padding-left="" padding-right=""><span class="titleSize">Brands</span></h4>
+        <hr/>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><span>Mobile Covers & Screen Guards</span></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><span>Power Banks</span></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><span>Earphones</span></page-custom-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><span>Memory Cards</span></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><span>Pendrives</span></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="2"><p>Cables& Chargers</p></page-custom-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <page-footer></page-footer>
+</ion-footer>

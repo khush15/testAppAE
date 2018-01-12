@@ -1,0 +1,41 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <ion-list no-padding="" class="whiteBackground greyBorderTop ">
+    <ion-row>
+      <ion-col>
+        <ion-slides loop="false" pager="true" effect="slide" speed="3000" slidesPerView="1" spaceBetween="0" autoplay="false">
+          <ion-slide *ngFor="let productDetail of productDetails">
+            <img [src]="productDetail.image" class="swiper-slide ripple" alt="image" >
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col padding-right="" padding-left="">
+        <ul class="productDescription_ul">
+          <li><h4 text-left="" class="prodTitle">Apple iPhone X</h4></li>
+          <li><h6 text-left="">P.id: AE0005</h6></li>
+          <li><ion-badge class="successBadge" item-end="">4.1 <ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge></li>
+          <li><h4>Rs.89000</h4></li>
+        </ul>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list>
+    <ion-row>
+      <ion-col no-padding="">
+        <button ion-button="" class="whiteBackground" color="light" full large="" text-capitalize="" text-center=""><ion-icon class="blueColor">Space Gray</ion-icon><label
+          ><small>hfuegrhh</small></label></button>
+      </ion-col>
+      <ion-col no-padding="">
+        <button ion-button="" class="whiteBackground" color="light" full large="" text-capitalize="" text-center=""><ion-icon class="blueColor">64GB</ion-icon><label
+        ><small>hfuegrhh</small></label></button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>

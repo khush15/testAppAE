@@ -1,0 +1,15 @@
+<ion-navbar>
+  <button ion-button menuToggle *ngIf="_header.showMenu">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>{{_header.title}}</ion-title>
+  <ion-title *ngIf="_header.showLogo"><img src="assets/imgs/icons/AE.png" alt="logo" class="Ae_logo"></ion-title>
+  <ion-buttons end *ngIf="_header.showSearch">
+    <button ion-button><ion-icon ios="ios-search" md="md-search" class="headerIconSize"></ion-icon>
+    </button>
+  </ion-buttons>
+  <ion-buttons end *ngIf="_header.showNotification">
+    <button ion-button><ion-icon ios="ios-notifications-outline" md="md-notifications-outline" class="headerIconSize"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>

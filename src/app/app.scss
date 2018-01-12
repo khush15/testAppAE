@@ -1,0 +1,83 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.Ae_logo{width: 45px;}
+.headerIconSize{    font-size: 2.6rem;}
+.greyBorderTop{border-top: 10px solid #f1f2f8;}
+.greyBorderBottom{border-bottom: 10px solid #f1f2f8;}
+.whiteBackground{ background: #fff;}
+.icon-img-slide{width: 28px !important;  height: 24px !important; margin: auto;}
+.thumb-img {
+  padding: 0;
+}
+.slideicon_para{font-size: 10px;font-weight: 400;color: #7a7a7a;margin-top: 0;    line-height: 11px;}
+.alignH6{    line-height: 1;  font-weight: 400;    font-size: 1.6rem;padding: 0px 24px 0px 24px;}
+.product_width{   width: auto !important;  height: 130px !important;  margin: auto;    margin-top: 7px;}
+.productHeading{    text-align: left;  font-size: 1.5rem !important;overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;    padding: 0 4px;  }
+.card_custom{position: relative;margin: 0px 5px 10px 10px;  border-radius: 5px;  width: calc(100% - 11px);border: 1px solid #999999;}
+.rupeesFontSize{font-size: 1.2rem !important;}
+.oldPriceColor{color: $rupeeGrey !important; text-align: left; height: 2.1em;    margin: 0.4rem 0.2rem;    padding: 8px 3px;line-height: 2.4rem;}
+.newPriceColor{color:#000;    height: 2.1em; text-align: left; margin: 0.4rem 0.2rem;    padding: 3px;line-height: 2.4rem;}
+.product-badge{padding: 0px 0px 3px 3px;text-align: right;}
+.ion-item-price .item-inner{padding-right: 0 !important;}
+.discount{color: $rupeeGrey !important; border: 1px solid $rupeeGrey;    font-size: 1.1rem !important;  padding: 1px;    line-height: inherit;}
+.font1-2{  padding-top: 4px;}
+.font1-2 p{font-size: 10px !important;    font-weight: lighter;}
+.font1-2.alignpadding{padding-top: 9px;}
+.font1-2.alignpadding p{font-size: 10px !important;    font-weight: lighter;  }
+.yellowStar{color:#e4c817;}
+.box-flex{display:-webkit-inline-box;}
+.successBadge{    padding: 3px 2px;
+  font-size: 10px;
+  background: #2fb70d;
+  border-radius: 0;
+  margin: 2px 0; }
+.p3{padding: 3px;}
+.strike{text-decoration: line-through;}
+.blueColor{ color: $blueDefaul;}
+.no-padding-top{padding-top: 0;}
+//footer
+.defaultColor{color:#666666;}
+.activeColor{color: $blueDefaul;}
+.sidebar_icon_width{ width: 28px !important;  height: 28px !important;}
+.textSize{    font-size: 13px;}
+//productList
+.productlistIcon{ width: 22px;}
+.prodfilterBtn .text{ color: #6b6b6b ;text-indent: 8px;  font-size: 16px;  }
+.footerBtn{margin-bottom: 0;margin-top: 0;}
+//brands
+.titleSize{ color: #000; font-size: 2rem;}
+hr{background-color: #bababa;}
+
+.parent{padding: 5% 0 !important;}
+.parent .outer p{padding: 10% 0 !important; text-align: center;}
+
+//Product Description
+.productDescription_ul{
+  padding: 0;
+  h4,h6{margin-bottom: 0;margin-top: 0 !important;}
+  h4{color:#000;}
+  h4.prodTitle{font-size: 1.7rem;}
+  h6{color:$rupeeGrey;}
+  li{ list-style: none; margin-bottom: 3px;}
+  li ion-badge{margin: 0;}
+}
+
+
+
+

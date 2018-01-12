@@ -1,0 +1,51 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <ion-list>
+    <ion-row>
+      <ion-col no-padding="">
+        <button ion-button="" class="whiteBackground prodfilterBtn" color="light" full large="" text-capitalize=""><img src="assets/imgs/icons/sort.png" class="productlistIcon" alt="img"><span class="text">Sorting</span></button>
+      </ion-col>
+      <ion-col no-padding="">
+        <button ion-button="" class="whiteBackground prodfilterBtn" color="light" full large="" text-capitalize=""><img src="assets/imgs/icons/filter.png" class="productlistIcon" alt="img"><span class="text">Filter</span></button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+    <ion-list>
+      <ion-row>
+        <ion-col col-6 *ngFor="let product of products">
+          <ion-card class="card_custom ripple" (click)="openProductDescripton();">
+            <img [src]="product.productImage" class="slide-image product_width" alt="image"/>
+            <ion-card-content no-padding="">
+              <h5 class="productHeading">{{product.productTitle}}</h5>
+              <ion-grid class="p3">
+                <ion-row>
+                  <ion-col no-padding="">
+                    <h5 class="rupeesFontSize oldPriceColor"><span class="strike">{{product.oldPrice}}</span></h5>
+                    <div class="box-flex">
+                      <h5 class="rupeesFontSize newPriceColor">{{product.newPrice}}</h5>
+                      <ion-badge class="successBadge" item-end="">{{product.rating}}<ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge>
+                    </div>
+                  </ion-col>
+                  <ion-col no-padding="">
+                    <div class="product-badge ion-item-price">
+                      <button ion-button="" small item-end icon-left color="light" outline class="discount">
+                        {{product.discount}}
+                      </button>
+                    </div>
+                    <div class="font1-2" text-right=""><p>P.Id:{{product.pId}}</p></div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+  <page-footer></page-footer>
+</ion-footer>

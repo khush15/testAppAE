@@ -1,0 +1,132 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <ion-list no-padding="" class="whiteBackground greyBorderTop ">
+    <ion-row>
+      <ion-col>
+        <h4 text-center="">Shop on Ahuja Electronics</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding="">
+        <ion-slides loop="false" pager="false" effect="slide" speed="3000" slidesPerView="5" spaceBetween="2" autoplay="false">
+          <ion-slide *ngFor="let slideIcon of slideIcons">
+            <img (click)="openPage(slideIcon)" [src]="slideIcon.productIcon" class="slide-image icon-img-slide thumb-img swiper-slide" alt="image" width="20px">
+            <p class="slideicon_para" >{{slideIcon.productTitle}}</p>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+  <ion-list no-margin="" no-padding="" class="whiteBackground greyBorderTop ">
+     <ion-row>
+       <ion-col style="    padding-bottom: 0;">
+         <img src="assets/imgs/icons/banner-landingPage.png" alt="images">
+       </ion-col>
+     </ion-row>
+  </ion-list>
+  <ion-list no-padding="" class="whiteBackground greyBorderTop">
+    <ion-row>
+      <ion-col class="alignH6">
+        <h6 float-start>Top Trending Phones</h6>
+        <p float-end class="blueColor" (click)="openBrands()">
+          View all
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="no-padding-top">
+        <ion-slides pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
+          <ion-slide *ngFor="let trendingProduct of trendingProducts">
+            <ion-card class="card_custom ripple"  (click)="openProductList()">
+              <img [src]="trendingProduct.productImage" class="slide-image product_width" alt="image"/>
+              <ion-card-content no-padding="">
+                <h5 class="productHeading">{{trendingProduct.productTitle}}</h5>
+                <ion-grid class="p3">
+                  <!--<ion-row>-->
+                    <!--<ion-col no-padding="">-->
+                      <!--<h5 class="rupeesFontSize oldPriceColor"><span class="strike">{{trendingProduct.oldPrice}}</span></h5>-->
+                      <!--<h5 class="rupeesFontSize newPriceColor">{{trendingProduct.newPrice}}</h5>-->
+                    <!--</ion-col>-->
+                    <!--<ion-col col-auto no-padding="">-->
+                      <!--<h5 class="rupeesFontSize oldPriceColor">&nbsp;</h5>-->
+                      <!--<div><ion-badge class="successBadge">{{trendingProduct.rating}}<ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge></div>-->
+                    <!--</ion-col>-->
+                    <!--<ion-col no-padding="">-->
+                      <!--<div class="product-badge ion-item-price">-->
+                        <!--<button ion-button="" small item-end icon-left color="light" outline class="discount">-->
+                          <!--{{trendingProduct.discount}}-->
+                        <!--</button>-->
+                      <!--</div>-->
+                      <!--<div class="font1-2" text-right="">P.Id:{{trendingProduct.pId}}</div>-->
+                    <!--</ion-col>-->
+                  <!--</ion-row>-->
+                  <ion-row>
+                    <ion-col no-padding="">
+                      <h5 class="rupeesFontSize oldPriceColor"><span class="strike">{{trendingProduct.oldPrice}}</span></h5>
+                      <div class="box-flex">
+                        <h5 class="rupeesFontSize newPriceColor">{{trendingProduct.newPrice}}</h5>
+                        <ion-badge class="successBadge" item-end="">{{trendingProduct.rating}} <ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge>
+                      </div>
+                    </ion-col>
+                    <ion-col no-padding="">
+                      <div class="product-badge ion-item-price">
+                        <button ion-button="" small item-end icon-left color="light" outline class="discount">
+                          {{trendingProduct.discount}}
+                        </button>
+                      </div>
+                      <div class="font1-2" text-right=""><p>P.Id:{{trendingProduct.pId}}</p></div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list no-padding="" class="whiteBackground greyBorderTop greyBorderBottom">
+    <ion-row>
+      <ion-col class="alignH6">
+        <h6 float-start>Items You Have Viewed</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="no-padding-top">
+        <ion-slides pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
+          <ion-slide *ngFor="let trendingProduct of trendingProducts">
+            <ion-card class="card_custom ripple">
+              <img [src]="trendingProduct.productImage" class="slide-image product_width" alt="image"/>
+              <ion-card-content no-padding="">
+                <h5 class="productHeading">{{trendingProduct.productTitle}}</h5>
+                <ion-grid class="p3">
+                  <ion-row>
+                    <ion-col no-padding="">
+                      <div class="box-flex">
+                        <h5 class="rupeesFontSize newPriceColor">{{trendingProduct.newPrice}}</h5>
+                        <ion-badge class="successBadge" item-end="">{{trendingProduct.rating}}<ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge>
+                      </div>
+                    </ion-col>
+                    <ion-col no-padding="">
+                      <div class="font1-2 alignpadding" text-right="">
+                        <p>P.Id:{{trendingProduct.pId}}</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <page-footer></page-footer>
+</ion-footer>

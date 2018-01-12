@@ -1,0 +1,14 @@
+page-home {
+  ion-slide.swiper-slide {
+    left: 10px;    display: inline-block !important;
+  }
+  ion-slide.swiper-slide img{display: inline-block !important;}
+  .slide-zoom {
+    background: #fff;
+  }
+
+  .thumb-img {
+    padding: 0;
+  }
+  .scroll-content{    margin-bottom: 65px;  }
+}

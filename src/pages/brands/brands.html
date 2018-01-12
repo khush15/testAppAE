@@ -1,0 +1,50 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+   <ion-list>
+     <ion-row>
+       <ion-col>
+         <h4 padding-left="" padding-right=""><span class="titleSize">Brands</span></h4>
+         <hr/>
+       </ion-col>
+     </ion-row>
+
+     <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/apple.png'"></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/samsung.png'"></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/nokia.png'"></page-custom-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/sony.png'"></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/vivo.png'"></page-custom-card>
+        </ion-col>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/lenovo.png'"></page-custom-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4>
+          <page-custom-card [type]="1" [image]="'assets/imgs/icons/htc.png'"></page-custom-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   </ion-list>
+</ion-content>
+
+<ion-footer>
+  <page-footer></page-footer>
+</ion-footer>
