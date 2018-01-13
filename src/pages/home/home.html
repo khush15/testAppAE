@@ -13,7 +13,7 @@
       <ion-col no-padding="">
         <ion-slides loop="true" pager="false" effect="slide" speed="3000" slidesPerView="5" spaceBetween="2" autoplay="false">
           <ion-slide *ngFor="let slideIcon of slideIcons">
-            <img (click)="openPage(slideIcon)" [src]="slideIcon.productIcon" class="slide-image icon-img-slide thumb-img" alt="image">
+            <img (click)="openPage(slideIcon)" [src]="slideIcon.productIcon" class="icon-img-slide thumb-img" alt="image">
             <p class="slideicon_para" >{{slideIcon.productTitle}}</p>
           </ion-slide>
         </ion-slides>
@@ -21,7 +21,7 @@
     </ion-row>
 
      <ion-row no-margin="" no-padding="" class="whiteBackground greyBorderTop ">
-       <ion-col style="    padding-bottom: 0;">
+       <ion-col no-padding="" style="    padding-bottom: 0;">
          <img src="assets/imgs/icons/banner-landingPage.png" alt="images">
        </ion-col>
      </ion-row>
