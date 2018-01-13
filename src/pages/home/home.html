@@ -11,24 +11,22 @@
     </ion-row>
     <ion-row>
       <ion-col no-padding="">
-        <ion-slides loop="false" pager="false" effect="slide" speed="3000" slidesPerView="5" spaceBetween="2" autoplay="false">
+        <ion-slides loop="true" pager="false" effect="slide" speed="3000" slidesPerView="5" spaceBetween="2" autoplay="false">
           <ion-slide *ngFor="let slideIcon of slideIcons">
-            <img (click)="openPage(slideIcon)" [src]="slideIcon.productIcon" class="slide-image icon-img-slide thumb-img swiper-slide" alt="image" width="20px">
+            <img (click)="openPage(slideIcon)" [src]="slideIcon.productIcon" class="slide-image icon-img-slide thumb-img" alt="image">
             <p class="slideicon_para" >{{slideIcon.productTitle}}</p>
           </ion-slide>
         </ion-slides>
       </ion-col>
     </ion-row>
-  </ion-list>
-  <ion-list no-margin="" no-padding="" class="whiteBackground greyBorderTop ">
-     <ion-row>
+
+     <ion-row no-margin="" no-padding="" class="whiteBackground greyBorderTop ">
        <ion-col style="    padding-bottom: 0;">
          <img src="assets/imgs/icons/banner-landingPage.png" alt="images">
        </ion-col>
      </ion-row>
-  </ion-list>
-  <ion-list no-padding="" class="whiteBackground greyBorderTop">
-    <ion-row>
+
+    <ion-row no-padding="" class="whiteBackground greyBorderTop">
       <ion-col class="alignH6">
         <h6 float-start>Top Trending Phones</h6>
         <p float-end class="blueColor" (click)="openBrands()">
@@ -36,6 +34,7 @@
         </p>
       </ion-col>
     </ion-row>
+
     <ion-row>
       <ion-col class="no-padding-top">
         <ion-slides pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
@@ -87,10 +86,8 @@
         </ion-slides>
       </ion-col>
     </ion-row>
-  </ion-list>
 
-  <ion-list no-padding="" class="whiteBackground greyBorderTop greyBorderBottom">
-    <ion-row>
+    <ion-row no-padding="" class="whiteBackground greyBorderTop">
       <ion-col class="alignH6">
         <h6 float-start>Items You Have Viewed</h6>
       </ion-col>

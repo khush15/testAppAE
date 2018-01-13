@@ -32,10 +32,6 @@ export class HomePage {
       productTitle:"Computer Accessories"
     },
     {
-      productIcon: "assets/imgs/icons/games.png",
-      productTitle:"SmartPhones"
-    },
-    {
       productIcon: "assets/imgs/icons/laptop-accessories.png",
       productTitle:"SmartPhones"
     },
