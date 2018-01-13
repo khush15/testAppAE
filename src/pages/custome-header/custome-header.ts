@@ -22,7 +22,7 @@ export class CustomeHeaderPage {
     showNotification:boolean,
     showSearch:boolean,
     showMenu:boolean,
-  }
+  };
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -37,7 +37,6 @@ export class CustomeHeaderPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CustomeHeaderPage');
   }
 
 }

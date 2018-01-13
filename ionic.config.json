@@ -1,0 +1,8 @@
+{
+  "name": "AhujaElectronics",
+  "app_id": "c670dda5",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -16,12 +16,11 @@ import {HEADERCONSTANTS} from "../../constants/headerConstants";
 })
 export class AccessoriesPage {
 
-  header =HEADERCONSTANTS.accessories;
+  header = HEADERCONSTANTS.accessories;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccessoriesPage');
   }
 
 }
