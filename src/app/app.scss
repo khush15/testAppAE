@@ -18,9 +18,11 @@
 
 .Ae_logo{width: 45px;}
 .headerIconSize{    font-size: 2.6rem;}
+.greyBorderTopMin{border-top: 1px solid #e9eaeb;}
 .greyBorderTop{border-top: 10px solid #f1f2f8;}
 .greyBorderBottom{border-bottom: 10px solid #f1f2f8;}
 .whiteBackground{ background: #fff;}
+.bxShadow{    margin-bottom: 4px;    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);  }
 .icon-img-slide{width: 30px !important;  height: 30px !important; margin: auto;}
 .thumb-img {
   padding: 0;
@@ -76,6 +78,15 @@ hr{background-color: #bababa;}
   h6{color:$rupeeGrey;}
   li{ list-style: none; margin-bottom: 3px;}
   li ion-badge{margin: 0;}
+}
+
+.p10{padding: 6px 5px;margin: 6px 0;}
+.blueDefaulText{color:$blueDefaulText;}
+.greyTxt{color:$rupeeGrey;}
+.borderRight{border-right: 1px solid #737373;}
+.prodHighlights{
+  padding: 0 17px;
+  li{    font-size: 1.3rem;  line-height: 17px;color: $rupeeGrey;}
 }
 
 

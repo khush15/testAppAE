@@ -23,6 +23,9 @@ export class ProductDescriptionPage {
     {
       image: "assets/imgs/icons/img1.png",
     },
+      {
+          image: "assets/imgs/icons/img1.png",
+      },
     ];
 
   ionViewDidLoad() {

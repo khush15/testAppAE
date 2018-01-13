@@ -37,31 +37,13 @@
 
     <ion-row>
       <ion-col class="no-padding-top">
-        <ion-slides pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
+        <ion-slides pager="false" loop="true" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
           <ion-slide *ngFor="let trendingProduct of trendingProducts">
             <ion-card class="card_custom ripple"  (click)="openProductList()">
               <img [src]="trendingProduct.productImage" class="slide-image product_width" alt="image"/>
               <ion-card-content no-padding="">
                 <h5 class="productHeading">{{trendingProduct.productTitle}}</h5>
                 <ion-grid class="p3">
-                  <!--<ion-row>-->
-                    <!--<ion-col no-padding="">-->
-                      <!--<h5 class="rupeesFontSize oldPriceColor"><span class="strike">{{trendingProduct.oldPrice}}</span></h5>-->
-                      <!--<h5 class="rupeesFontSize newPriceColor">{{trendingProduct.newPrice}}</h5>-->
-                    <!--</ion-col>-->
-                    <!--<ion-col col-auto no-padding="">-->
-                      <!--<h5 class="rupeesFontSize oldPriceColor">&nbsp;</h5>-->
-                      <!--<div><ion-badge class="successBadge">{{trendingProduct.rating}}<ion-icon ios="ios-star" md="md-star" class="yellowStar"></ion-icon></ion-badge></div>-->
-                    <!--</ion-col>-->
-                    <!--<ion-col no-padding="">-->
-                      <!--<div class="product-badge ion-item-price">-->
-                        <!--<button ion-button="" small item-end icon-left color="light" outline class="discount">-->
-                          <!--{{trendingProduct.discount}}-->
-                        <!--</button>-->
-                      <!--</div>-->
-                      <!--<div class="font1-2" text-right="">P.Id:{{trendingProduct.pId}}</div>-->
-                    <!--</ion-col>-->
-                  <!--</ion-row>-->
                   <ion-row>
                     <ion-col no-padding="">
                       <h5 class="rupeesFontSize oldPriceColor"><span class="strike">{{trendingProduct.oldPrice}}</span></h5>
@@ -94,7 +76,7 @@
     </ion-row>
     <ion-row>
       <ion-col class="no-padding-top">
-        <ion-slides pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
+        <ion-slides loop="true" pager="false" effect="slide" speed="3000" slidesPerView="2" spaceBetween="0" autoplay="false">
           <ion-slide *ngFor="let trendingProduct of trendingProducts">
             <ion-card class="card_custom ripple">
               <img [src]="trendingProduct.productImage" class="slide-image product_width" alt="image"/>

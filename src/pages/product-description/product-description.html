@@ -3,15 +3,17 @@
 </ion-header>
 
 <ion-content no-bounce overflow-scroll="true">
-  <ion-list no-padding="" class="whiteBackground greyBorderTop ">
+  <ion-list no-padding=""  class="whiteBackground bxShadow">
     <ion-row>
-      <ion-col>
-        <ion-slides loop="false" pager="true" effect="slide" speed="3000" slidesPerView="1" spaceBetween="0" autoplay="false">
-          <ion-slide *ngFor="let productDetail of productDetails">
-            <img [src]="productDetail.image" class="swiper-slide ripple" alt="image" >
-          </ion-slide>
-        </ion-slides>
-      </ion-col>
+      <ion-col col-2></ion-col>
+        <ion-col col-8>
+            <ion-slides loop="true" pager="true" effect="slide" speed="3000" slidesPerView="1" spaceBetween="0" autoplay="false">
+                <ion-slide *ngFor="let productDetail of productDetails">
+                    <img [src]="productDetail.image" class="ripple slide-image slider-image-height" text-center="" alt="image" >
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+      <ion-col col-2></ion-col>
     </ion-row>
 
     <ion-row>
@@ -26,16 +28,41 @@
     </ion-row>
   </ion-list>
 
-  <ion-list>
+  <ion-list no-padding="" class="whiteBackground greyBorderTop bxShadow greyBorderTopMin">
     <ion-row>
       <ion-col no-padding="">
-        <button ion-button="" class="whiteBackground" color="light" full large="" text-capitalize="" text-center=""><ion-icon class="blueColor">Space Gray</ion-icon><label
-          ><small>hfuegrhh</small></label></button>
+        <div class="whiteBackground ripple p10 borderRight" color="light" text-capitalize="" text-center=""><h6 class="blueDefaulText" no-margin>Space Gray</h6><h6 no-margin class="greyTxt">Color(2)</h6></div>
       </ion-col>
       <ion-col no-padding="">
-        <button ion-button="" class="whiteBackground" color="light" full large="" text-capitalize="" text-center=""><ion-icon class="blueColor">64GB</ion-icon><label
-        ><small>hfuegrhh</small></label></button>
+        <div class="whiteBackground ripple p10" color="light" text-capitalize="" text-center=""><h6 class="blueDefaulText" no-margin>64GB</h6><h6 no-margin class="greyTxt">Storage</h6></div>
       </ion-col>
     </ion-row>
   </ion-list>
+
+  <ion-list no-padding="" class="whiteBackground greyBorderTop bxShadow greyBorderTopMin">
+    <ion-row>
+      <ion-col no-padding="" padding-left="" padding-right="">
+          <h4>Highlights</h4>
+          <ul class="prodHighlights">
+              <li>64 GB ROM</li>
+              <li>5.8 inch Super Retina HD Display</li>
+              <li>12MP + 12MP Dual Rear Camera | 7MP Front Camera lithium-ion Battery</li>
+          </ul>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
 </ion-content>
+
+<ion-footer>
+    <ion-grid no-padding="">
+        <ion-row>
+            <ion-col>
+                <button ion-button="" color="light" full large text-capitalize="">Add to Cart</button>
+            </ion-col>
+            <ion-col>
+                <button ion-button="" color="danger" full large text-capitalize="">Buy Now</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
