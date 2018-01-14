@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {CartPage} from "../cart/cart";
 
 /**
  * Generated class for the FooterPage page.
@@ -21,5 +22,7 @@ export class FooterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FooterPage');
   }
-
+openFooterPage(){
+    this.navCtrl.push(CartPage);
+}
 }

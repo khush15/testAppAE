@@ -33,5 +33,12 @@ export const HEADERCONSTANTS= {
     showSearch: false,
     showNotification: false,
     showMenu: true
+  },
+  cart:{
+      title: "My Cart",
+      showLogo:false,
+      showSearch: false,
+      showNotification: false,
+      showMenu: true
   }
 };

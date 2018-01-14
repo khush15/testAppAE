@@ -15,6 +15,7 @@ import {BrandsPage} from "../pages/brands/brands";
 import {CustomCardPage} from "../pages/custom-card/custom-card";
 import {AccessoriesPage} from "../pages/accessories/accessories";
 import {ProductDescriptionPage} from "../pages/product-description/product-description";
+import {CartPage} from "../pages/cart/cart";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {ProductDescriptionPage} from "../pages/product-description/product-descr
     BrandsPage,
     CustomCardPage,
     AccessoriesPage,
-    ProductDescriptionPage
+    ProductDescriptionPage,
+    CartPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import {ProductDescriptionPage} from "../pages/product-description/product-descr
     BrandsPage,
     CustomCardPage,
     AccessoriesPage,
-    ProductDescriptionPage
+    ProductDescriptionPage,
+    CartPage
   ],
   providers: [
     StatusBar,
