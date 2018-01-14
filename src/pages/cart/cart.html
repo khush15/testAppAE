@@ -1,0 +1,67 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+    <ion-grid class="cartPage">
+        <ion-list class="whiteBackground greyBorderBottom" no-margin="" no-padding="">
+            <ion-row class="rowAllinement">
+                <ion-col col-9 class="colInnerPadding" no-margin="">
+                    <ul>
+                        <li><h5 no-margin="" nowrap="">iPhone X (Black,64 GB)</h5></li>
+                        <li><div class="product-price"><span><span class="product-discountedPrice"><!-- react-text: 386 -->Rs. <!-- /react-text --><!-- react-text: 387 -->599<!-- /react-text --></span><span class="product-strike"><!-- react-text: 389 -->Rs. <!-- /react-text --><!-- react-text: 390 -->1199<!-- /react-text --></span></span><span class="product-discountPercentage">(50% OFF)</span></div>
+                        </li>
+                    </ul>
+                    <ion-item no-lines="" no-padding="">
+                        <ion-select  okText="Ok" cancelText="Dismiss" no-margin="" no-padding="">
+                            <ion-option value="1" selected="">Qty: 1</ion-option>
+                            <ion-option value="2">Qty: 2</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-3 class="colInnerPadding" margin-vertical>
+                    <img src="assets/imgs/icons/headphones.jpg" class="cartImage" alt="image"/>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+
+        <ion-list class="whiteBackground greyBorderBottom" no-margin="" no-padding="">
+            <ion-row class="rowAllinement">
+                <ion-col col-9 class="colInnerPadding" no-margin="">
+                    <ul>
+                        <li><h5 no-margin="" nowrap="">iPhone X (Black,64 GB)</h5></li>
+                        <li><h2 no-margin="" nowrap="" class="text-danger">Out of Stock</h2></li>
+                    </ul>
+                </ion-col>
+                <ion-col col-3 class="colInnerPadding" margin-vertical>
+                    <img src="assets/imgs/icons/charger.jpg" class="cartImage" alt="image"/>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col no-padding="">
+                    <button ion-button="" class="whiteBackground borderTopBtn" clear item-end icon-left large full="" color="light" text-capitalize=""><ion-icon name="trash"></ion-icon><span class="text">Remove</span></button>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+
+    </ion-grid>
+
+    <ion-grid class="whiteBackground">
+        <ion-row class="rowAllinement">
+            <ion-col col-6 class="colInnerPadding">
+                <h4 no-margin="" class="vertical_h4">Rs 89,000</h4>
+                <h6 no-margin class="blueDefaulText">View Details</h6>
+            </ion-col>
+            <ion-col col-6 class="colInnerPadding">
+                <button ion-button=" " large="" full="" color="secondary" text-capitalize="">Continue</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+
+
+<ion-footer>
+  <page-footer></page-footer>
+</ion-footer>
