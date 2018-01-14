@@ -4,7 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
-body{font-family: 'Poppins';background-color: #d3d4d9;}
+body{font-family: 'Poppins';background-color: #f1f2f8;}
+ion-app.md{background-color: #f1f2f8 !important;}
+.content-md{background-color: #f1f2f8 !important;}
 
 h1,h2,h3,h4,h5,h6,p,div,span{font-family: 'Poppins';}
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CartPage} from "../cart/cart";
+import {LoginPage} from "../login/login";
 
 /**
  * Generated class for the FooterPage page.
@@ -24,5 +25,8 @@ export class FooterPage {
   }
 openFooterPage(){
     this.navCtrl.push(CartPage);
+}
+openLoginPage(){
+    this.navCtrl.push(LoginPage);
 }
 }

@@ -16,6 +16,7 @@ import {CustomCardPage} from "../pages/custom-card/custom-card";
 import {AccessoriesPage} from "../pages/accessories/accessories";
 import {ProductDescriptionPage} from "../pages/product-description/product-description";
 import {CartPage} from "../pages/cart/cart";
+import {LoginPage} from "../pages/login/login";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {CartPage} from "../pages/cart/cart";
     CustomCardPage,
     AccessoriesPage,
     ProductDescriptionPage,
-    CartPage
+    CartPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import {CartPage} from "../pages/cart/cart";
     CustomCardPage,
     AccessoriesPage,
     ProductDescriptionPage,
-    CartPage
+    CartPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
