@@ -178,3 +178,31 @@ ion-item.item-wp.item-input.ng-invalid.ng-touched:not(.input-has-focus) .text-in
 
 .blueButtonLogin{background: $blueButton;}
 .auto{margin: auto;}
+.item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+  color: #727272;font-size: 16px;
+}
+.lightBlueButton{background: $lightBlueButton;}
+.footerFixed{left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;    padding: 0 10px;}
+//delivery
+.delivery{
+  padding: 5px 0;
+  .delivery_adddress{padding: 0;}
+  .delivery_adddress li{list-style: none;}
+  .delivery_adddress li h6{margin: 0;padding: 0;  font-size: 1.4rem;}
+  .delivery_adddress li h6{color: #000;}
+  .delivery_adddress li h6 span{color: #217dbd;}
+  .blueColor{color:#217dbd;}
+  .borderTop{    border-top: 1px solid #dedede;}
+  .borderRight{border-right: 1px solid #dedede;}
+  .small_xs{    margin: 0;  font-size: 1.4rem;}
+  .greenText{color:$offerGreen;}
+  .checkout ion-item-divider, .checkout ion-item{padding: 0 16px;font-size: 1.4rem;}
+  .checkout ion-item-divider ion-label, .checkout ion-item ion-label{margin: 0;}
+  .checkout .item-md [item-end]{margin: 0px 8px 0px 0;}
+}
+.marginBtm{    margin-bottom: 10px !important;  }

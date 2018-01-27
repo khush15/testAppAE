@@ -17,6 +17,8 @@ import {AccessoriesPage} from "../pages/accessories/accessories";
 import {ProductDescriptionPage} from "../pages/product-description/product-description";
 import {CartPage} from "../pages/cart/cart";
 import {LoginPage} from "../pages/login/login";
+import {AddressPage} from "../pages/address/address";
+import {DeliveryPage} from "../pages/delivery/delivery";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {LoginPage} from "../pages/login/login";
     AccessoriesPage,
     ProductDescriptionPage,
     CartPage,
-    LoginPage
+    LoginPage,
+    AddressPage,
+    DeliveryPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ import {LoginPage} from "../pages/login/login";
     AccessoriesPage,
     ProductDescriptionPage,
     CartPage,
-    LoginPage
+    LoginPage,
+    AddressPage,
+    DeliveryPage
   ],
   providers: [
     StatusBar,

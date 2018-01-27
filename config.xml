@@ -86,4 +86,11 @@
     <allow-navigation href="http://192.168.1.10:8100" />
     <allow-navigation href="http://192.168.43.18:8101" />
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-ionic" spec="^2.0.4">
+        <variable name="APP_ID" value="dcf9d264" />
+        <variable name="CHANNEL_NAME" value="textAppAE" />
+        <variable name="UPDATE_METHOD" value="background" />
+        <variable name="UPDATE_API" value="https://api.ionicjs.com" />
+        <variable name="MAX_STORE" value="2" />
+    </plugin>
 </widget>

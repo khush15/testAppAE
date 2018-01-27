@@ -40,5 +40,19 @@ export const HEADERCONSTANTS= {
       showSearch: false,
       showNotification: false,
       showMenu: true
-  }
+  },
+  addressPage:{
+      title: "Address",
+      showLogo:false,
+      showSearch: false,
+      showNotification: false,
+      showMenu: true
+  },
+    deliveryPage:{
+        title: "Delivery",
+        showLogo:false,
+        showSearch: false,
+        showNotification: false,
+        showMenu: true
+    }
 };

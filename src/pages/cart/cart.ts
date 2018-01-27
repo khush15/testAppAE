@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HEADERCONSTANTS} from "../../constants/headerConstants";
+import {AddressPage} from "../address/address";
 
 /**
  * Generated class for the CartPage page.
@@ -23,6 +24,9 @@ export class CartPage {
 
   ionViewDidLoad() {
 
+  }
+  goToAddressPage(){
+    this.navCtrl.push(AddressPage)
   }
 
 }
