@@ -1,0 +1,50 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <form>
+    <ion-list>
+      <ion-item padding-left="" padding-right="">
+        <ion-label floating>Name <span class="astric">*</span></ion-label>
+        <ion-input type="text" clearInput=""></ion-input>
+      </ion-item>
+
+      <ion-item padding-left="" padding-right="">
+        <ion-label floating>Address <span class="astric">*</span></ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+        <ion-item padding-left="" padding-right="">
+            <ion-label floating>Mobile Number <span class="astric">*</span></ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines="" padding-left="" padding-right="">
+            <ion-label stacked=""><span class="greyTxt">Type of Address</span></ion-label>
+        </ion-item>
+        <ion-row radio-group>
+            <ion-col no-padding="">
+                <ion-item no-lines="">
+                    <ion-label>Home</ion-label>
+                    <ion-radio checked="true" value="Home"></ion-radio>
+                </ion-item>
+            </ion-col>
+            <ion-col no-padding="">
+                <ion-item no-lines="">
+                    <ion-label>Office/Commercial</ion-label>
+                    <ion-radio value="Office"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+      <br>
+  </form>
+</ion-content>
+
+    <ion-row class="footerFixed">
+        <ion-col>
+            <button ion-button  color="primary" class="lightBlueButton" block="" full type="submit" text-capitalize (click)="goToDeliveryPage()">Save</button>
+        </ion-col>
+    </ion-row>
+

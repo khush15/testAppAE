@@ -1,0 +1,60 @@
+<ion-header>
+  <page-custome-header [header]="header"></page-custome-header>
+</ion-header>
+
+<ion-content no-bounce overflow-scroll="true">
+  <ion-grid class="delivery cartPage">
+      <ion-list class="whiteBackground bxShadow marginBtm" no-margin="" no-padding="">
+          <ion-row class="rowAllinement">
+              <ion-col>
+                  <ul class="delivery_adddress">
+                      <li><h6><span>Amit Kumar</span></h6></li>
+                      <li><h6>A-63 Second Floor,</h6></li>
+                      <li><h6>Sector - 64, Gurgaon (122001)</h6></li>
+                  </ul>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <button ion-button="" color="light" class="whiteBackground blueColor borderRight" clear="" full="" text-capitalize="">Edit/Changes</button>
+              </ion-col>
+              <ion-col>
+                  <button ion-button="" color="light" class="whiteBackground blueColor" clear="" full="" text-capitalize="">Add New Address</button>
+              </ion-col>
+          </ion-row>
+      </ion-list>
+
+      <ion-list class="whiteBackground bxShadow marginBtm" no-margin="" no-padding="">
+          <ion-row class="rowAllinement">
+              <ion-col col-9 class="colInnerPadding" no-margin="">
+                  <ul>
+                      <li><h5 no-margin="" nowrap="">iPhone X (Black,64 GB)</h5></li>
+                      <li><div class="product-price"><span><span class="product-discountedPrice"><!-- react-text: 386 -->Rs. <!-- /react-text --><!-- react-text: 387 -->599<!-- /react-text --></span><span class="product-strike"><!-- react-text: 389 -->Rs. <!-- /react-text --><!-- react-text: 390 -->1199<!-- /react-text --></span></span><span class="product-discountPercentage">(50% OFF)</span></div>
+                      </li>
+                  </ul>
+                  <ion-item no-lines="" no-padding="">
+                      <h6 class="small_xs">Estimate Delivery: 2 Jan</h6>
+                  </ion-item>
+              </ion-col>
+              <ion-col col-3 class="colInnerPadding" margin-vertical>
+                  <img src="assets/imgs/icons/headphones.jpg" class="cartImage" alt="image"/>
+              </ion-col>
+          </ion-row>
+      </ion-list>
+
+      <ion-list class="whiteBackground bxShadow marginBtm checkout" no-margin="" no-padding="">
+          <ion-item-divider no-margin="" color="light" class="whiteBackground">Total Items: 1</ion-item-divider>
+          <ion-item no-margin="" no-lines="">Order Value <span class="blueColor">(View Details)</span> <span item-end>Rs 89,000</span></ion-item>
+          <ion-item no-margin="" no-lines="">Delivery <span item-end class="greenText">Free</span></ion-item>
+          <ion-item-divider no-margin="" color="light" class="whiteBackground borderTop">Total Payable: 1 <span item-end="">Rs 89,000</span></ion-item-divider>
+      </ion-list>
+
+  </ion-grid>
+</ion-content>
+
+<ion-row class="footerFixed">
+    <ion-col>
+        <button ion-button  color="primary" class="lightBlueButton" block="" full type="submit" text-capitalize>Continue</button>
+    </ion-col>
+</ion-row>
+
